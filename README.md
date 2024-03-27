@@ -68,24 +68,24 @@ https://hgdownload2.soe.ucsc.edu/downloads.html
 
 # Requestments
 
-pandas
-numpy
-tensorflow==2.3.2
-shap
-matplotlib
-scikit-learn
-keras_multi_head
-keras_layer_normalization
-keras_bert
-imblearn
-seaborn
-imbalanced-learn==0.11.0
-imblearn==0.0
-keras-layer-normalization==0.16.0
-keras-multi-head==0.29.0
-keras-pos-embd== 0.13.0
-keras-position-wise-feed-forward==0.8.0
-keras-transformer==0.40.0
-tqdm==4.66.1
-xlrd==2.0.1
-zipp==3.15.0
+pandas  
+numpy  
+tensorflow==2.3.2  
+shap  
+matplotlib  
+scikit-learn  
+keras_multi_head  
+keras_layer_normalization  
+keras_bert  
+imblearn  
+seaborn  
+imbalanced-learn==0.11.0  
+imblearn  
+keras-layer-normalization==0.16.0  
+keras-multi-head==0.29.0  
+keras-pos-embd== 0.13.0  
+keras-position-wise-feed-forward==0.8.0  
+keras-transformer==0.40.0  
+tqdm==4.66.1  
+xlrd==2.0.1  
+zipp==3.15.0  
