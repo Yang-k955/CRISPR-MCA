@@ -1,7 +1,11 @@
-* main.py - Main entry for model files
-* Data - Dataset processing and analysis files
+CRISPR-MCA is a novel hybrid network model for off-target prediction in CRISPR-Cas9, which employs multi-scale feature extraction and fusion techniques to improve the prediction accuracy while ensuring the model is lightweight. We also open-source the Efficiency and Specificity-Based (ESB) class rebalancing strategy, which can solve the problem of class imbalance in off-target datasets.
+
+
+
+* main.py - **Main entry for model files**
+* Data - **Dataset processing and analysis files**
   * DataAnalysis
-    * Imbalance analysis
+    * Imbalance analysis 
       * dataset.csv
       * Imbalabce.py
     * Mismatch analysis
@@ -10,14 +14,14 @@
     * Mismatch count
       * HeatMap.py
       * Mismatch Counts.png
-  * DataEncoding
+  * DataEncoding - **Coding files for all models**
     * encodingList.py
-  * DataExtension
+  * DataExtension - **ESB Class Rebalancing Strategy**
     * crisot.py
     * crisot_score_param.csv
     * Main.py
-  * DataSets
-    * extension
+  * DataSets - **off-target datasets**
+    * extension - **Expanded datasets and their characterization**
       * cleaned_Haeussler_Extension.csv
       * cleaned_Hek293t_Extension.csv
       * cleaned_K562Hek293_Extension.csv
@@ -32,10 +36,10 @@
       * Result
         * imbanlance.csv
         * output.csv
-    * Indel
+    * Indel - **Datasets containing indel and mismatches**
       * CIRCLE_seq.csv
       * GUIDE-Seq.csv
-    * Mismatch
+    * Mismatch  - **Mismatch-only datasets**
       * Haeussler.csv
       * Hek293t.csv
       * K562.csv
@@ -44,7 +48,7 @@
       * Listgarten.csv
       * SITE.csv
       * Tasi.csv
-* Models
+* Models - **All model files**
   * ModelList.py
   * mymodel.py
 * Result
