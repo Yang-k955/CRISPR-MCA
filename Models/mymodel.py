@@ -62,7 +62,7 @@ def MCNN(input_tensor, filter_channels):
     output = concatenate([branch1, branch2, branch3, branch4], axis=-1)
     return output
 
-def CRISPR_Net_Inception_MultiHead():
+def CRISPR-MCA():
     inputs = Input(shape=(1, 24, 7), name='main_input')
     inception_output = MCNN(inputs, 10)
     mixed = Reshape((24, -1))(inception_output)
@@ -86,6 +86,6 @@ def CRISPR_Net_Inception_MultiHead():
     return model
 
 if __name__ == '__main__':
-    mdoel = CRISPR_Net_Inception_MultiHead_noposition()
+    mdoel = CRISPR-MCA()
     mdoel.summary()
     pass
