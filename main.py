@@ -185,8 +185,6 @@ def run():
                     xtest = xtest.reshape((len(xtest), 1, CODING_SIZE_L, CODING_SIZE_H))
                 ytest = to_categorical(ytest, NUM_CLASSES)
 
-                xtest, xval, ytest, yval = train_test_split(xtest, ytest, test_size=0.1, random_state=SEED)
-
                 if "Extension" in TAG:
                     print("Begin rebalancing dataset")
                     positive_indices = np.where(ytrain[:] == 1)[0]
@@ -226,7 +224,7 @@ def run():
                     batch_size=BATCH_SIZE,
                     verbose=1,
                     callbacks=callbacks,
-                    validation_data=(xval, yval)
+                    validation_split=0.2
                 )
 
                 save_model(dataset_name, model, MODEL_NAME, fold, TAG)
