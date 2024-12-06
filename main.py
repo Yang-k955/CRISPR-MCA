@@ -213,10 +213,9 @@ def run():
 
                 train_data_encodings = train_data_encodings.astype('float32')
                 xtest = xtest.astype('float32')
-                xval = xval.astype('float32')
                 train_labels = train_labels.astype('float32')
                 ytest = ytest.astype('float32')
-                yval = yval.astype('float32')
+                
 
                 history = model.fit(
                     train_data_encodings, train_labels,
